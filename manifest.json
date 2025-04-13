@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Lexi",
+  "version": "0.0.0-alpha",
+  "description": "Lexi is a browser extension that brings Pollicy's Lexicon Tool capabilities to browsers for content moderation.",
+  "icons": {
+    "32": "images/pollicy-favicon.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
